@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Please, enter your name</title>
+</head>
+<body>
+<h1 align="left"> Get method</h1>
+<form   action="helloservletpath" method="get">
+	
+	Your name:
+	<input type="text" name="userName" />
+	<input type="submit" value="click"/>
+</form>
+<br>
+<h1 align="left"> Post method</h1>
+<form   action="helloservletpath" method="post">
+	
+	Your name:<input type="text" name="userName" />
+	Your profession : <br/>
+	<input type="radio" name="prof" value="Developer">Developer</input><br/>
+	<input type="radio" name="prof" value="Architect">Architect</inptut><br/>
+	<select name="location" multiple size=2 >
+		<option value="Minsk">Minsk</option>
+		<option value="Moscow">Moscow</option>
+		<option value="Paris">Paris</option>
+	</select>
+	<input type="submit" value="click"/>
+</form>
+
+</body>
+</html>
