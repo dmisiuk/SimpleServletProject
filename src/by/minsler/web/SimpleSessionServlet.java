@@ -21,19 +21,18 @@ public class SimpleSessionServlet extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 
 		PrintWriter out = response.getWriter();
-		out.println("<h1> Simple session servlet<h1>");
+		out.println("<h1> Simple session servlet</h1>");
 		String userName = request.getParameter("userName");
 		HttpSession session = request.getSession();
 		ServletContext context = request.getServletContext();
-		if (userName != null && userName != ""
-				&& session.getAttribute("savedUserName") == null) {
+		if (userName != null && userName != "") {
 			session.setAttribute("savedUserName", userName);
 			context.setAttribute("savedUserName", userName);
 		}
-		out.println("User name from request: " + userName + "<br/>");
-		out.println("User name from session: "
+		out.println("<i>User name from request: </i>" + userName + "<br/>");
+		out.println("<i>User name from session: </i>"
 				+ (String) session.getAttribute("savedUserName") + "<br/>");
-		out.println("User name from servletContext: "
+		out.println("<i>User name from servletContext: </i>"
 				+ (String) context.getAttribute("savedUserName") + "<br/>");
 
 	}
