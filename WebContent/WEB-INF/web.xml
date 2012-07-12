@@ -34,4 +34,18 @@
   	<url-pattern>/session</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+  	<servlet-name>initjsp</servlet-name>
+  	<jsp-file>/initJSP.jsp</jsp-file>
+  	<init-param>
+  		<param-name>defaultUser</param-name>
+  		<param-value>MisiukDefault</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>initjsp</servlet-name>
+  	<url-pattern>/initjsp</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
