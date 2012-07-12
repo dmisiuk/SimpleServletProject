@@ -20,4 +20,18 @@
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/helloservletpath</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SimpleSessionServlet</servlet-name>
+  	<servlet-class>by.minsler.web.SimpleSessionServlet</servlet-class>
+  	<init-param>
+  		<param-name>defaultUser</param-name>
+  		<param-value>Циванюк Василий</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SimpleSessionServlet</servlet-name>
+  	<url-pattern>/session</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
